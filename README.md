@@ -6,7 +6,7 @@ The goal of these special styles is to optimize Firefox Nightlyfor "compact mode
 
 I wanted to share these files because "CustomCSSforFx" is no longer up-to-date. If you like my design (see screenshot), feel free to copy it. 
 
-![](screenshot01.png)
+![](./chrome/screenshot01.png)
 
 #  How to use
 
