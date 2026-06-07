@@ -2,7 +2,7 @@
 
 This is the contents of my Firefox "chrome" folder, containing my own CSS customizations. I use these files on macOS.
 
-The goal of these special styles is to optimize Firefox Nightlyfor "compact mode“. My focus was on the tabs and the address bar, but other customizations are also included.
+The goal of these styles is to optimize the "compact mode“ in the Nightly. My focus was on the tab & address bar, but other customizations are also included.
 
 I wanted to share these files because "CustomCSSforFx" is no longer up-to-date. If you like my design (see screenshot), feel free to copy it. 
 
