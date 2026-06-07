@@ -33,6 +33,9 @@ user_pref("browser.urlbar.quicksuggest.ampTopPickUseNovaIconSize", true);
 
 #
 
+# Enable Compact Mode
+Go to View > Toolbars > Customize Toolbar and select Compact(at the bottom).
+
 
 
 # Give feedback 
