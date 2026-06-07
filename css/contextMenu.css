@@ -1,8 +1,0 @@
-/* ==========================================================================
-   2. RECHTSKLICK-KONTEXTMENÜS
-   ========================================================================== */
-menupopup > menuitem, menupopup > menu {
-  padding-block: 2px !important;
-  min-height: 22px !important;
-}
-
