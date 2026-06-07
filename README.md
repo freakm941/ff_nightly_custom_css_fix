@@ -9,22 +9,30 @@ I wanted to share these files because "CustomCSSforFx" is no longer up-to-date. 
 ![](./chrome/screenshot01.png)
 
 #  How to use
+Copy the chrome Folder to your Profile, restart Firefox.
+#
+Enable user stylesheets and compact mode. Copy this text into your user.js (or copy user.js in your profile):
 
-To use it, you must first enable user stylesheets and compact mode.
-Copy this text into your user.js (or copy my user.js to your profile):
-
-// *********************
 // Enable user stylesheets
+
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 
 // Enable compact mode
+
 user_pref("browser.compactmode.show", true);
 
 // Enable Nova UI
-user_pref("browser.nova.enabled", true);
-user_pref("browser.newtabpage.activity-stream.nova.enabled", true);
-user_pref("browser.urlbar.nova.featureGate", true);
-user_pref("browser.urlbar.quicksuggest.ampTopPickUseNovaIconSize", true);
-// *********************
 
-Give feedback 
+user_pref("browser.nova.enabled", true);
+
+user_pref("browser.newtabpage.activity-stream.nova.enabled", true);
+
+user_pref("browser.urlbar.nova.featureGate", true);
+
+user_pref("browser.urlbar.quicksuggest.ampTopPickUseNovaIconSize", true);
+
+#
+
+
+
+# Give feedback 
