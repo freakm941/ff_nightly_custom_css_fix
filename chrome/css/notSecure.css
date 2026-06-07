@@ -1,6 +1,5 @@
 /* ==========================================================================
-   5. WARNUNG FÜR UNSICHERE VERBINDUNGEN (HTTP / NICHT HTTPS)
-   ========================================================================== */
+    5. WARNING FOR UNSECURE CONNECTIONS (HTTP / NOT HTTPS)   ========================================================================== */
 
 /* Färbt den Hintergrund der Adressleiste dezent Rot, wenn die Seite unsicher ist */
 #urlbar[not-secure] #urlbar-background {
