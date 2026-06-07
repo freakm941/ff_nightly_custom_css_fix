@@ -1,0 +1,73 @@
+
+/* ==========================================================================
+   1. NAVIGATIONS- & ADRESSLEISTE (NUR IM KOMPAKT-MODUS AKTIV)
+   ========================================================================== */
+
+:root[uidensity="compact"] {
+
+  /* Gesamte graue Navigationsleiste flacher machen */
+  #nav-bar {
+    max-height: 32px !important;
+    min-height: 28px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  /* Abstände zwischen den einzelnen Symbolen in der Leiste verringern */
+  #nav-bar toolbarbutton {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  /* Symbole (Icons) in der Adressleiste und Toolbar verkleinern & zentrieren */
+  #nav-bar .toolbarbutton-1, 
+  #nav-bar .urlbar-icon,
+  #identity-box,
+  #tracking-protection-icon-container,
+  .searchbar-search-button {
+    transform: scale(0.82) !important; /* Verkleinert die Symbole auf 82% */
+    transform-origin: center !important;
+  }
+
+  /* Höhe des eigentlichen Adress- und Suchfeldes (Urlbar) verringern */
+  #urlbar-container, 
+  #urlbar,
+  #searchbar {
+    min-height: 24px !important;
+    max-height: 24px !important;
+    --urlbar-container-height: 24px !important; 
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  /* Innenabstände im Textfeld korrigieren (verhindert Text-Abschneiden) */
+  #urlbar-input-container,
+  .searchbar-textbox {
+    height: 24px !important;
+    max-height: 24px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    align-items: center !important; /* Zentriert Icons und Text vertikal */
+  }
+
+  /* Suchmaschinenselektor (Google-Icon rechts) anpassen */
+  #urlbar .search-one-offs {
+    max-height: 24px !important;
+  }
+
+  /* --- Blickdichten Hintergrund für das Adressleisten-Dropdown erzwingen --- */
+  #urlbar[open] .urlbarView {
+    background-color: var(--toolbar-field-background-color, #2B2A33) !important; /* Nutzt Theme-Farbe, sonst Dunkelgrau */
+    background-image: none !important; /* Entfernt transparente Verläufe */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important; /* Visuelle Trennung zur Webseite */
+  }
+
+  /* Verhindert, dass die Ergebnisseite transparent durchschimmert */
+  .urlbarView-body-inner {
+    background-color: var(--toolbar-field-background-color, #2B2A33) !important;
+  }
+}

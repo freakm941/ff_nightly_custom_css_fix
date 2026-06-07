@@ -1,0 +1,39 @@
+/* ==========================================================================
+   5. WARNUNG FÜR UNSICHERE VERBINDUNGEN (HTTP) - NOVA SOLID RED FIX
+   ========================================================================== */
+
+/* Wenn die Identity-Box meldet, dass die Seite unsicher ist */
+:root:has(#identity-box.notSecure) {
+  /* Globale Farbvariablen im Fundament auf sattes Dunkelrot setzen */
+  --urlbar-box-bgcolor: #800000 !important;   /* Kastanienrot/Dunkelrot */
+  --urlbar-background-color: #800000 !important;
+  --urlbar-bg: #800000 !important;
+}
+
+/* Zwingt alle Nova-Hintergrundschichten, absolut blickdicht rot zu sein */
+#urlbar:has(#identity-box.notSecure),
+#urlbar:has(#identity-box.notSecure) #urlbar-background,
+#urlbar:has(#identity-box.notSecure) #urlbar-background::before,
+#urlbar:has(#identity-box.notSecure) #urlbar-background::after {
+  background-color: #800000 !important;
+  background-image: none !important;
+  opacity: 1 !important;                 /* Verhindert den transparenten Schleier */
+  border: 1px solid #ff3333 !important;  /* Deutlicher roter Rahmen */
+  box-shadow: none !important;
+}
+
+/* Textfarbe im Adressfeld KNALLWEIẞ machen für maximalen Kontrast */
+#urlbar:has(#identity-box.notSecure) .urlbar-input,
+#urlbar:has(#identity-box.notSecure) .urlbar-input-container {
+  color: #000000 !important;
+  -moz-text-fill-color: #000000 !important;
+}
+
+/* Das Warn-Icon links (Dreieck/Schloss) ebenfalls sauber abheben */
+#identity-box.notSecure {
+  background-color: #cc0000 !important;
+  color: #ffffff !important;
+  fill: #ffffff !important; 
+  border-radius: 4px 0 0 4px !important;
+  opacity: 1 !important;
+}
